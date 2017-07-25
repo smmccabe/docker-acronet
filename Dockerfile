@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
   libpcre3 libpcre3-dev \
   rsync \
   libcurl3 libcurl4-openssl-dev \
+  libmysql++-dev \
   ftplib-dev \
   graphicsmagick-libmagick-dev-compat
 
