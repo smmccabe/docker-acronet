@@ -1,4 +1,4 @@
-FROM gcc
+FROM ubuntu:latest
 
 RUN git clone https://github.com/danmar/cppcheck.git \
   && cd cppcheck \
