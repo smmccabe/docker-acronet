@@ -3,6 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   make \
   automake \
+  pkg-config \
   git \
   g++ \
   python \
