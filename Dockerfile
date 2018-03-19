@@ -17,6 +17,6 @@ RUN apt-get update && apt-get install -y \
   python-pip python-dev build-essential \
   libyaml-cpp0.3-dev \
   libcgicc-dev \
-  libboost-add-dev \
+  libboost-all-dev \
   libjsoncpp-dev \
   npm
