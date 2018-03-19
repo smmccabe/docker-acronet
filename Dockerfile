@@ -12,10 +12,11 @@ RUN apt-get update && apt-get install -y \
   libcurl3 libcurl4-openssl-dev \
   libmysql++-dev \
   ftplib-dev \
-  graphicsmagick-libmagick-dev-compat
-
-RUN git clone https://github.com/danmar/cppcheck.git \
-  && cd cppcheck \
-  && make install SRCDIR=build CFGDIR=/usr/share/cppcheck/cfg HAVE_RULES=yes CXXFLAGS="-O2 -DNDEBUG -Wall -Wno-sign-compare -Wno-unused-function" \
-  && cd .. \
-  && rm cppcheck -rf
+  graphicsmagick-libmagick-dev-compat \
+  cppcheck \
+  python-pip python-dev build-essential \
+  libyaml-cpp0.3-dev \
+  libcgicc-dev \
+  libboost-add-dev \
+  libjsoncpp-dev \
+  npm
