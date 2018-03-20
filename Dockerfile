@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y \
   libyaml-cpp0.3-dev \
   libcgicc-dev \
   libboost-all-dev \
-  libjsoncpp-dev
+  libjsoncpp-dev \
+  libssl-dev
 
 RUN add-apt-repository ppa:tista/build && apt-get update && apt-get install -y \
   rsync \
