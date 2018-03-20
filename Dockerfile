@@ -7,8 +7,11 @@ RUN apt-get update && apt-get install -y \
   git \
   g++ \
   python \
+  python-software-properties \
+  software-properties-common
+
+RUN apt-get update && apt-get install -y \
   libpcre3 libpcre3-dev \
-  rsync \
   libcurl3 libcurl4-openssl-dev \
   libmysql++-dev \
   ftplib-dev \
@@ -18,5 +21,8 @@ RUN apt-get update && apt-get install -y \
   libyaml-cpp0.3-dev \
   libcgicc-dev \
   libboost-all-dev \
-  libjsoncpp-dev \
-  npm
+  libjsoncpp-dev
+
+RUN add-apt-repository ppa:tista/build && apt-get update && apt-get install -y \
+  rsync \
+  sassc
