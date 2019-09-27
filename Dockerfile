@@ -7,12 +7,11 @@ RUN apt-get update && apt-get install -y \
   git \
   g++ \
   python \
-  python-software-properties \
   software-properties-common
 
 RUN apt-get update && apt-get install -y \
   libpcre3 libpcre3-dev \
-  libcurl3 libcurl4-openssl-dev \
+  libcurl4 libcurl4-openssl-dev \
   libmysql++-dev \
   graphicsmagick-libmagick-dev-compat \
   cppcheck \
@@ -23,6 +22,6 @@ RUN apt-get update && apt-get install -y \
   libjsoncpp-dev \
   libssl-dev
 
-RUN add-apt-repository ppa:tista/build && apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
   rsync \
   sassc
